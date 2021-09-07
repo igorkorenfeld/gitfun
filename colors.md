@@ -4,4 +4,4 @@ My name is Igor and my favorite color is blue
 
 
 
-The best color is magenta
+The best color is {magenta}
