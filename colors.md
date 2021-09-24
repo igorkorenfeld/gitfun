@@ -7,3 +7,7 @@ My name is Igor and my favorite color is blue
 Me llamo Austin y mi color favorito es gris.
 
 The best color is {magenta}
+
+
+## Food Talk
+What's your favorite food? oh wait, this is colors? 
