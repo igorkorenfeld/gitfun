@@ -10,7 +10,7 @@ This readme contains instructions for playing around with git and modifying our 
 ## Staging and committing
 1. Navigate to where git cloned the `gitfun` folder
 1. Open up the `colors.md` file
-2. On line 5 of the `color.md` file add in some text with your name and favorite color
+2. In the `color.md` file add in a line of text at the bottom with your name and favorite color at the bottom of the file.
 4. In your terminal type `git status`, this will show you which files have been modified
 3. In your terminal type `git add .` and hit enter. This will add all of the modified files, in this case just `colors.md`, to the "Staging" area. These are files that  are now ready to be "committed".
 4. In your terminal type `git status`, this will show you which files are ready to be committed.
@@ -60,11 +60,11 @@ After modifying the conflicted area to whatever it should be, you'll need to add
 You the conflict should now be resolved, and you can `git push` the resolved changes to GitHub
 
 ## Branching
-So far we've been pushing each collaborator's change directly into the `main` branch. But as we saw this can create conflicts. To avoid running into merge conflicts all of the time, and separate out new features we are working on, we can using branching. Setting up a new branch let's us focus on a particular feature, or try out a new thing, and save changes to it, without affecting the `main` branch. When we are ready to incorporate that thing into our main branch, we can merge it back in. So let's try it out now. Let's add a new section of your choosing to the `colors.md` document.
+So far we've been pushing each collaborator's change directly into the `main` branch. But as we saw this can create conflicts. To avoid running into merge conflicts all of the time, and separate out new features we are working on, we can using branching. Setting up a new branch let's us focus on a particular feature, or try out a new thing, and save changes to it, without affecting the `main` branch. When we are ready to incorporate that thing into our main branch, we can merge it back in. So let's try it out now.
 
 1. In your terminal type `git checkout -b {branchname}` where `{branchname}` is some a descriptive name for your branch. What this command does is creates a new branch, with whatever name you chose, and switches over to that branch
 2. In your terminal type `git branch` this will now show you all of the branches that currently exist and you can switch to. the "*" indicates the branch you are on.
-3. Add a new section to the `colors.md` file
+3. Add a new file in the repo folder, similar to the `colors.md` file, with a topic of your choice (e.g. "hobbies.md", "food.md", "travel.md" etc..).
 4. In the terminal stage and commit your changes (see above for instructions if you need a reminder on how to do this).
 5. In your terminal type `git push -u origin {branchname}`. This will push your branch to the remote repo (on GitHub), so that other collaborators can see it, and so that you can create a `pull request` (more on that later). Note that this is different from the push we did before. This time we are pushing up a new branch, rather than pushing our changes to the `main` branch on the remote server.
 5. In your terminal type `git checkout main`. This will switch you back to the `main` branch. Notice that your changes are no longer in `colors.md`? But don't worry, you can get back to them with `git checkout {branchname}`. This is to emphasize that you can switch back between different branches, working on different parts in different times, and discarding changes when you no longer want them.
