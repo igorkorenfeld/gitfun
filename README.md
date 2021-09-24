@@ -74,9 +74,11 @@ So far we've been pushing each collaborator's change directly into the `main` br
 At this point we've worked on a new branch and made some changes, and now we are ready to incorporate those changes into the main branch. When working with other collaborators, the way we do this is creating a `Pull Request`, often abbreviated as "PR". This means we are asking someone to review our changes, and if everything looks good, to `pull` our changes into the the `main` branch, so they the changes get merged in. This is similar to how we pulled things locally earlier, but now we are asking for a pull to take place on the remote repository. It's also a better practice than pushing changes directly to the `main` branch when working with other collaborators (and you might not always have permissions to do that). Let's try it now:
 1. Head over to our [repo on GitHub](https://github.com/igorkorenfeld/gitfun)
 2.
- - If you just pushed up your branch recently you may see a yellow banner at the top of the your page that has your branch name and a green button that says "Compare & pull request". Click on that button
-
+ - If you just pushed up your branch recently you may see a yellow banner at the top of the your page that has your branch name and a green button that says "Compare & pull request". 
+Click on that button
+![Screen Shot 2021-09-24 at 10 50 14 AM](https://user-images.githubusercontent.com/52677065/134712415-635527ad-1df1-41fc-bbf2-a791c43d513b.png)
  - If it's been a little while since you pushed up your branch the banner might not be there. In which case click on the "Pull requests" link on in the repository's subnavigation menu (the 3rd link). This will bring you to a page that says "Compare changes". <br><br> This section is comparing the base branch, the one you want to merge into, with the changes in the branch you are trying to merge back in. So in our case `base:` should be `main` (as it is by default). And we want to change the `compare:` so that it is `{branchname}`, using the dropdown button. Then click on "Create pull request" on the right-hand side.
+![Screen Shot 2021-09-24 at 11 29 29 AM](https://user-images.githubusercontent.com/52677065/134712460-cbdc5aa8-78b0-4f05-b55e-a950da738f87.png)
 
 
 3. Give your pull request a title, and in the "Write" section, write a brief description of the changes your pull request is making. This would be a place to note any other thoughts you have, if this PR is fixing a particular issue, and any other information you feel might be useful.
