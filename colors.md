@@ -2,6 +2,6 @@
 
 My name is Igor and my favorite color is blue
 
-My name is Austin and my favorite color is green
+Me llamo Austin y mi color favorito es gris.
 
 The best color is {magenta}
